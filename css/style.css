@@ -1,0 +1,333 @@
+/* =========================================================
+   RESTERA HOTEL (Hat Thong Heritage Hotel)
+   Custom stylesheet — โทนกรมท่า / ทอง / น้ำตาล
+   (Bootstrap 5 ใช้เป็นเลเยอร์ grid/utility พื้นฐาน)
+   ========================================================= */
+
+:root {
+  --pd-navy: #14283F;
+  --pd-navy-deep: #0C1A29;
+  --pd-gold: #B8923D;
+  --pd-gold-soft: #D8BC7B;
+  --pd-brown: #6B4226;
+  --pd-brown-deep: #402715;
+  --pd-paper: #F6F1E7;
+  --pd-ink: #2B2117;
+  --pd-line: rgba(43, 33, 23, 0.15);
+
+  --font-display: "Fraunces", "Noto Serif Thai", serif;
+  --font-body: "Work Sans", "Noto Sans Thai", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--pd-ink);
+  background-color: var(--pd-paper);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, .display-font {
+  font-family: var(--font-display);
+  color: var(--pd-navy);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--pd-navy); }
+a:hover { color: var(--pd-gold); }
+
+.text-gold { color: var(--pd-gold) !important; }
+.text-brown { color: var(--pd-brown) !important; }
+.bg-paper { background-color: var(--pd-paper) !important; }
+.bg-navy { background-color: var(--pd-navy) !important; }
+
+/* ---------- Navbar ---------- */
+.navbar-hthh {
+  background-color: var(--pd-paper);
+  border-bottom: 1px solid var(--pd-brown);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-hthh .navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--pd-navy);
+  line-height: 1.15;
+}
+.navbar-hthh .navbar-brand small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--pd-brown);
+  font-weight: 500;
+}
+.navbar-hthh .navbar-brand span { color: var(--pd-gold); }
+
+.navbar-hthh .nav-link {
+  color: var(--pd-ink);
+  font-weight: 500;
+  margin-left: 1.25rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-hthh .nav-link:hover,
+.navbar-hthh .nav-link.active {
+  color: var(--pd-navy);
+  border-bottom: 2px solid var(--pd-gold);
+}
+
+/* ---------- Buttons ---------- */
+.btn-hthh {
+  background-color: var(--pd-navy);
+  color: var(--pd-paper);
+  border: 1px solid var(--pd-navy);
+  border-radius: 2px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn-hthh:hover {
+  background-color: var(--pd-gold);
+  border-color: var(--pd-gold);
+  color: var(--pd-navy-deep);
+}
+
+.btn-hthh-outline {
+  background-color: transparent;
+  color: var(--pd-paper);
+  border: 1px solid var(--pd-gold-soft);
+  border-radius: 2px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 500;
+}
+.btn-hthh-outline:hover {
+  background-color: var(--pd-gold-soft);
+  color: var(--pd-navy-deep);
+}
+
+.btn-hthh-brown {
+  background-color: var(--pd-brown);
+  color: var(--pd-paper);
+  border: 1px solid var(--pd-brown);
+  border-radius: 2px;
+  padding: 0.65rem 1.4rem;
+  font-weight: 500;
+}
+.btn-hthh-brown:hover {
+  background-color: var(--pd-brown-deep);
+  border-color: var(--pd-brown-deep);
+  color: var(--pd-paper);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--pd-navy) 0%, var(--pd-navy-deep) 55%, var(--pd-brown-deep) 130%);
+  color: var(--pd-paper);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-eyebrow {
+  color: var(--pd-gold-soft);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.hero h1 {
+  color: var(--pd-paper);
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero .lead {
+  color: rgba(246, 241, 231, 0.82);
+  max-width: 48ch;
+}
+
+.hero-img-frame {
+  border: 1px solid rgba(216, 188, 123, 0.4);
+  padding: 10px;
+}
+.hero-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Section rhythm ---------- */
+.section { padding: 5rem 0; }
+.section-tight { padding: 3.5rem 0; }
+
+.section-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--pd-line);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-index {
+  font-family: var(--font-display);
+  color: var(--pd-brown);
+  font-size: 1rem;
+}
+
+/* ---------- Cards ---------- */
+.card-hthh {
+  border: 1px solid var(--pd-line);
+  border-radius: 2px;
+  background-color: #ffffff;
+  height: 100%;
+}
+.card-hthh .card-img-top {
+  border-radius: 0;
+  height: 210px;
+  object-fit: cover;
+}
+.card-hthh .card-body { padding: 1.5rem; }
+.card-hthh .card-title { font-family: var(--font-display); }
+
+.feature-card {
+  border-top: 3px solid var(--pd-gold);
+  background-color: #fff;
+  padding: 2rem 1.75rem;
+  height: 100%;
+}
+.feature-card:nth-child(2) { border-top-color: var(--pd-brown); }
+.feature-card .num {
+  font-family: var(--font-display);
+  color: var(--pd-line);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* ---------- Room / service listing (services page) ---------- */
+.item-card { border: 1px solid var(--pd-line); background: #fff; }
+.item-card img { height: 220px; object-fit: cover; }
+.item-card .price { font-family: var(--font-display); color: var(--pd-navy); font-size: 1.3rem; }
+.badge-gold {
+  background-color: var(--pd-gold);
+  color: var(--pd-navy-deep);
+  font-weight: 500;
+  border-radius: 2px;
+}
+.badge-brown {
+  background-color: var(--pd-brown);
+  color: var(--pd-paper);
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+/* ---------- Carousel ---------- */
+.carousel-hthh .carousel-item img {
+  height: 460px;
+  object-fit: cover;
+  filter: brightness(0.72) sepia(0.08);
+}
+.carousel-caption-hthh {
+  text-align: left;
+  left: 8%;
+  bottom: 15%;
+  max-width: 480px;
+}
+.carousel-caption-hthh h3 { color: #fff; font-size: 1.9rem; }
+
+/* ---------- Accordion ---------- */
+.accordion-hthh .accordion-button {
+  font-family: var(--font-display);
+  color: var(--pd-navy);
+  background-color: #fff;
+}
+.accordion-hthh .accordion-button:not(.collapsed) {
+  background-color: var(--pd-paper);
+  color: var(--pd-navy);
+  box-shadow: none;
+}
+.accordion-hthh .accordion-button::after { filter: sepia(0.6); }
+.accordion-hthh .accordion-item { border-color: var(--pd-line); border-radius: 0; }
+
+/* ---------- Forms ---------- */
+.form-hthh label { font-weight: 500; color: var(--pd-navy); }
+.form-hthh .form-control,
+.form-hthh .form-select {
+  border-radius: 2px;
+  border-color: var(--pd-line);
+  padding: 0.65rem 0.9rem;
+}
+.form-hthh .form-control:focus,
+.form-hthh .form-select:focus {
+  border-color: var(--pd-gold);
+  box-shadow: 0 0 0 0.2rem rgba(184, 146, 61, 0.2);
+}
+
+/* ---------- Footer ---------- */
+.footer-hthh {
+  background-color: var(--pd-brown-deep);
+  color: rgba(246, 241, 231, 0.75);
+  padding: 3.5rem 0 1.5rem;
+}
+.footer-hthh h5 {
+  color: var(--pd-paper);
+  font-family: var(--font-display);
+}
+.footer-hthh a {
+  color: rgba(246, 241, 231, 0.75);
+  text-decoration: none;
+}
+.footer-hthh a:hover { color: var(--pd-gold-soft); }
+.footer-hthh hr { border-color: rgba(246, 241, 231, 0.15); }
+
+/* ---------- Misc ---------- */
+.divider-gold {
+  width: 60px;
+  height: 3px;
+  background-color: var(--pd-gold);
+  border: none;
+  margin: 1rem 0 1.5rem;
+}
+
+.page-header {
+  background: linear-gradient(120deg, var(--pd-navy) 0%, var(--pd-brown-deep) 160%);
+  color: var(--pd-paper);
+  padding: 4rem 0 3rem;
+}
+.page-header h1 { color: var(--pd-paper); }
+
+.progress-hthh { background-color: rgba(107, 66, 38, 0.15); }
+.progress-hthh .progress-bar { background-color: var(--pd-gold); }
+
+/* ---------- Robot butler banner (Home) ---------- */
+.robot-banner {
+  background: linear-gradient(160deg, var(--pd-navy-deep) 0%, var(--pd-brown-deep) 140%);
+}
+.robot-banner .text-white-50 { max-width: 62ch; }
+.text-gold-soft { color: var(--pd-gold-soft) !important; }
+
+.feature-card-dark {
+  background-color: rgba(246, 241, 231, 0.06);
+  border-top: 3px solid var(--pd-gold-soft);
+  padding: 2rem 1.75rem;
+  height: 100%;
+}
+.feature-card-dark .num {
+  font-family: var(--font-display);
+  color: rgba(246, 241, 231, 0.25);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.feature-card-dark h5 { color: var(--pd-paper); }
+.feature-card-dark p { color: rgba(229, 162, 28, 0.7); }
+
+@media (max-width: 767.98px) {
+  .carousel-hthh .carousel-item img { height: 320px; }
+  .section { padding: 3.5rem 0; }
+}

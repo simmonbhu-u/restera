@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESTERA HOTEL</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-hthh sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">RESTERA <span> HOTEL</span><small>RESTERA HOTEL — EST. 2026</small></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">หน้าแรก</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับโรงแรม</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">ห้องพัก &amp; บริการ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ/จองห้อง</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container py-5">
+    <div class="row align-items-center gy-5 py-4">
+      <div class="col-lg-6">
+        <div class="hero-eyebrow mb-2">โรงแรมเฮอริเทจสุดทันสมัยริมชายหาด ก่อตั้งปี พ.ศ. 2569</div>
+        <h1 class="mb-4">สะดวก<br>สบาย<br>สงบ</h1>
+        <p class="lead mb-4">RESTERA HOTEL</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="contact.html" class="btn btn-hthh">จองห้องพัก</a>
+          <a href="services.html" class="btn btn-hthh-outline">ชมห้องพักและบริการ</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-img-frame">
+          <img src="img/main1.jpg" alt="อาคารหลักของหาดทอง เฮอริเทจ โฮเทล" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CAROUSEL -->
+<section class="section-tight">
+  <div class="container">
+    <div class="section-title-row">
+      <h2 class="mb-0">รูปแบบห้องพักและบริการ</h2>
+      <span class="section-index">01 — Gallery</span>
+    </div>
+
+    <div id="hotelCarousel" class="carousel slide carousel-hthh" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/infinitypool.jpg" class="d-block w-100" alt="สระว่ายน้ำอินฟินิตี้">
+          <div class="carousel-caption carousel-caption-hthh">
+            <h3>สระอินฟินิตี้ริมทะเล</h3>
+            <p>มองเห็นเส้นขอบฟ้าหาดทองได้แบบไร้ขอบเขต</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/room1.jpg" class="d-block w-100" alt="ห้องเฮอริเทจสวีท">
+          <div class="carousel-caption carousel-caption-hthh">
+            <h3>ห้องเฮอริเทจสวีท</h3>
+            <p>เฟอร์นิเจอร์ไม้สักดั้งเดิม ผสานเครื่องปรับอากาศทันสมัย</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/cafeteria.jpg" class="d-block w-100" alt="cafeteria">
+          <div class="carousel-caption carousel-caption-hthh">
+            <h3>ALL DAY DINING BUFFET</h3>
+            <p>อาหารสดใหม่ตลอดวัน</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ALERT -->
+<div class="container">
+  <div class="alert alert-dismissible fade show d-flex align-items-center justify-content-between" style="background-color:#EFE4CC; border:1px solid var(--pd-gold); border-radius:2px;" role="alert">
+    <div><strong>จองตรงกับโรงแรม</strong> — รับส่วนลด 15% พร้อมอัปเกรดห้องฟรีเมื่อมีห้องว่าง (เฉพาะจองผ่านหน้าติดต่อของเรา)</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+</div>
+
+<!-- INTRO + FEATURE CARDS -->
+<section class="section">
+  <div class="container">
+    <div class="row gy-5 align-items-start">
+      <div class="col-lg-5">
+        <div class="section-index mb-2">02 — จุดเด่นของเรา</div>
+        <h2>เหตุผลที่ควรเลือก<br>พักที่ RESTERA HOTEL</h2>
+        <hr class="divider-gold">
+        <p>เราไม่ใช่โรงแรมขนาดใหญ่ แต่เป็นโรงแรมขนาด 42 ห้อง ที่ดูแลรายละเอียดทุกจุดด้วยตัวเอง ตั้งแต่กลิ่นหอมของสมุนไพรในล็อบบี้ ไปจนถึงรอยยิ้มของพนักงานที่จำชื่อแขกทุกท่านได้</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="num">01</div>
+              <h5 class="mt-3">ริมหาดทราย</h5>
+              <p class="mb-0 small">เดินออกจากล็อบบี้ถึงชายหาดใน 3 นาที ไม่มีถนนกั้น</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="num">02</div>
+              <h5 class="mt-3">อาคารเฮอริเทจแท้</h5>
+              <p class="mb-0 small">อนุรักษ์โครงสร้างไม้สักเดิมของคฤหาสน์เก่าริมทะเล</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="num">03</div>
+              <h5 class="mt-3">บริการแบบใส่ใจ</h5>
+              <p class="mb-0 small">พนักงาน 1 คน ดูแลไม่เกิน 5 ห้อง เพื่อบริการที่ทั่วถึง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROBOT BUTLER BANNER -->
+<section class="section-tight robot-banner">
+  <div class="container">
+    <div class="section-title-row" style="border-color: rgba(246,241,231,0.18);">
+      <h2 class="mb-0 text-white">หุ่นยนต์ผู้ช่วยประจำทุกชั้น</h2>
+      <span class="section-index text-gold-soft">03 — นวัตกรรมใหม่ 2569</span>
+    </div>
+
+    <div class="row align-items-center gy-4 mb-4">
+      <div class="col-lg-6">
+        <p class="text-white-50 mb-0">เราผสานความคลาสสิกของคฤหาสน์เก่าเข้ากับเทคโนโลยีแห่งอนาคต ทุกชั้นของโรงแรมมีหุ่นยนต์ผู้ช่วยประจำการอยู่บริเวณหน้าลิฟต์ เพียงแตะคีย์การ์ดห้องพัก หุ่นยนต์จะขนกระเป๋าและนำทางท่านไปยังห้องพักโดยอัตโนมัติ</p>
+      </div>
+    </div>
+
+    <div id="robotCarousel" class="carousel slide carousel-hthh" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#robotCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#robotCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#robotCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/robot1.jpg" class="d-block w-100" alt="หุ่นยนต์ประจำจุดลิฟต์แต่ละชั้น">
+          <div class="carousel-caption carousel-caption-hthh">
+            <span class="badge badge-gold mb-2">ขั้นตอนที่ 1</span>
+            <h3>หุ่นยนต์รอต้อนรับหน้าลิฟต์ทุกชั้น</h3>
+            <p>หุ่นยนต์ผู้ช่วยประจำอยู่บริเวณโถงลิฟต์ของทุกชั้น พร้อมให้บริการตลอด 24 ชั่วโมง</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/taprobot1.jpg" class="d-block w-100" alt="แตะคีย์การ์ดเพื่อเริ่มบริการ">
+          <div class="carousel-caption carousel-caption-hthh">
+            <span class="badge badge-gold mb-2">ขั้นตอนที่ 2</span>
+            <h3>แตะคีย์การ์ดเพื่อเริ่มบริการ</h3>
+            <p>ระบบจดจำหมายเลขห้องจากคีย์การ์ดโดยอัตโนมัติ ไม่ต้องกดปุ่มหรือตั้งค่าใดๆ เพิ่มเติม</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/robotguid1.jpg" class="d-block w-100" alt="หุ่นยนต์นำทางและขนกระเป๋าไปยังห้องพัก">
+          <div class="carousel-caption carousel-caption-hthh">
+            <span class="badge badge-gold mb-2">ขั้นตอนที่ 3</span>
+            <h3>นำทาง พร้อมขนกระเป๋าถึงหน้าห้อง</h3>
+            <p>หุ่นยนต์เคลื่อนที่นำหน้าท่านไปตามทางเดิน พร้อมบรรทุกกระเป๋าเดินทางไปส่งถึงหน้าห้องพัก</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#robotCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#robotCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="row g-4 mt-1">
+      <div class="col-md-4">
+        <div class="feature-card feature-card-dark">
+          <div class="num">01</div>
+          <h5 class="mt-3">แตะคีย์การ์ด</h5>
+          <p class="mb-0 small">ที่จุดบริการหน้าลิฟต์ของชั้นที่ท่านเข้าพัก</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card feature-card-dark">
+          <div class="num">02</div>
+          <h5 class="mt-3">หุ่นยนต์นำทางอัตโนมัติ</h5>
+          <p class="mb-0 small">ระบบคำนวณเส้นทางที่สั้นที่สุดไปยังห้องพักของท่าน</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card feature-card-dark">
+          <div class="num">03</div>
+          <h5 class="mt-3">ส่งกระเป๋าถึงหน้าห้อง</h5>
+          <p class="mb-0 small">ไม่ต้องรอพนักงานยกกระเป๋า สะดวกทุกเวลาที่ท่านเดินทางถึง</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero py-5">
+  <div class="container text-center py-3">
+    <h2 class="text-white">วางแผนวันพักผ่อนของคุณที่นี่</h2>
+    <p class="lead mx-auto">ห้องพักมีจำนวนจำกัดเพียง 42 ห้อง จองล่วงหน้าเพื่อการันตีช่วงเวลาที่คุณต้องการ</p>
+    <a href="contact.html" class="btn btn-hthh-outline mt-2">ติดต่อจองห้องพัก</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-hthh">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h5>RESTERA HOTEL</h5>
+        <p class="small">โรงแรมเฮอริเทจที่ทันสมัยริมชายหาด พ.ศ. 2569 จำนวน 42 ห้องพัก</p>
+      </div>
+      <div class="col-md-4">
+        <h5>เมนู</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html">หน้าแรก</a></li>
+          <li class="mb-2"><a href="about.html">เกี่ยวกับโรงแรม</a></li>
+          <li class="mb-2"><a href="services.html">ห้องพัก &amp; บริการ</a></li>
+          <li class="mb-2"><a href="contact.html">ติดต่อ / จองห้อง</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>ติดต่อ</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2">038-888-888</li>
+          <li class="mb-2">reservation@RESTERA HOTEL.co.th</li>
+          <li class="mb-2">99 ถนนเลียบหาด อ.เมือง จ.ระยอง</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="small mb-0 text-center">&copy; 2026 RESTERA HOTEL. 69706784 นางสาวสุจิตา ภูมิสวัสดิ์.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
